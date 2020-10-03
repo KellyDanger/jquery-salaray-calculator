@@ -7,14 +7,14 @@ function onReady(){
 
 let employeeArray = [];
 
-
+//All actions happening on button click
 function buttonFunc(){
-  listEmpInfo();
-  console.log(calcMonthlyCosts());
-  $('.input').val('');
-  console.log('I was clicked')
+  listEmpInfo();//store and list the employees
+  calcMonthlyCosts();//calculate the total monthly cost of salaries
+  $('.input').val('');//clear inputs
 }//end buttonFunc
 
+//calculate the monthly salary of each employee fromt he employeeArray and add up the total monthly cost of salaries, called in buttonFunc
 function calcMonthlyCosts(){
   console.log('whoah, that is expensive')
   let monthlySalary = 0;
@@ -28,7 +28,9 @@ function calcMonthlyCosts(){
 }//end calculateMonthlyCosts
 
 
-function listEmpInfo(){//creates an object to store user input, working(tested via console log to confirm return of object)
+
+//creates an object to store user input as an object and push that object to the employeeArray
+function listEmpInfo(){
   let newEmployee = {
     firstName: $('#employeeFirstInput').val(),
     lastName: $('#employeeLastInput').val(),
