@@ -18,7 +18,7 @@ function buttonFunc(){
 function calcMonthlyCosts(){
   console.log('whoah, that is expensive')
   for(let i = 0; i < employeeArray.length; i++){
-    
+    console.log(i)
   }
 }//end calculateMonthlyCosts
 
