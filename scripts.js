@@ -14,6 +14,8 @@ function buttonFunc(){
   $('.input').val('');//clear inputs
 }//end buttonFunc
 
+
+
 //calculate the monthly salary of each employee fromt he employeeArray and add up the total monthly cost of salaries, called in buttonFunc
 function calcMonthlyCosts(){
   console.log('whoah, that is expensive')
@@ -39,6 +41,7 @@ function listEmpInfo(){
     salary: $('#salaryInput').val(),
   }
   employeeArray.push(newEmployee);
+  
 }//end storeEmpInfo
 
 

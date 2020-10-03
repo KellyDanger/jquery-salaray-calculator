@@ -1,0 +1,15 @@
+table, th, td, tfoot {
+border: 1px solid black;
+height: 20px;
+text-align: left;
+}
+table {
+  width: 100%;
+  margin-top: 50px;
+}
+th, td {
+  padding: 3px;
+}
+input {
+  margin-top: 5px;
+}
