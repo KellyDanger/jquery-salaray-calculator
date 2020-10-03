@@ -24,7 +24,8 @@ function calcMonthlyCosts(){
     monthlySalary = Math.floor(employeeArray[i].salary / 12);
     monthlyCost += monthlySalary;
   }
-  return monthlyCost;
+  $('#monthlyTotal').empty();
+  $('#monthlyTotal').append(`<td id="monthlyTotal">Monthly Total: $${monthlyCost} </td>`)
 }//end calculateMonthlyCosts
 
 //will append employee info to the DOM table
