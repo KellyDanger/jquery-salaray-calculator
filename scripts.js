@@ -29,7 +29,7 @@ function calcMonthlyCosts(){
     $('#monthlyTotal').addClass('redCell');
   }//end if statement
   $('#monthlyTotal').empty();
-  $('#monthlyTotal').append(`<td id="monthlyTotal">Monthly Total: $${monthlyCost} </td>`)
+  $('#monthlyTotal').text(`Monthly Total: $${monthlyCost}`)
 }//end calculateMonthlyCosts
 
 function deleteFunc(){

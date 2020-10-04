@@ -47,7 +47,10 @@ input {
 button {
   border-radius: 5px;
 }
-
+#monthlyTotal {
+  border-style: none;
+  text-align: right;
+}
 
 table {
   width: 100%;
