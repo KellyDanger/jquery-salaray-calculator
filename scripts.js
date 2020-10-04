@@ -4,7 +4,6 @@ $(document).ready(onReady);
 function onReady(){
   $('#employeeInfoButton').on('click', addFunc);
   $('#employeeInfoTableBody').on('click', '#deleteEmpButton', deleteFunc);
-  
 }//end onReady
  
 let employeeArray = [];
@@ -17,8 +16,6 @@ function addFunc(){
 }//end addFunc
 
 
-
-
 //calculate the monthly salary of each employee fromt he employeeArray and add up the total monthly cost of salaries, called in addFunc
 function calcMonthlyCosts(){
   let monthlySalary = 0;
@@ -29,7 +26,7 @@ function calcMonthlyCosts(){
   }//end for loop
   //if the monthly total is more than 20000, then the table cell will turn red
   if(monthlyCost > 20000){
-    $('#monthlyTotal').toggleClass('redCell');
+    $('#monthlyTotal').addClass('redCell');
   }//end if statement
   $('#monthlyTotal').empty();
   $('#monthlyTotal').append(`<td id="monthlyTotal">Monthly Total: $${monthlyCost} </td>`)
