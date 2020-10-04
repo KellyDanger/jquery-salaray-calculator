@@ -12,28 +12,28 @@
   <header>
     <h1>Salary Calculator</h1>
   </header>
+  <h2>Add Employee</h2>
   <div id="flexInput">
-    <input type="text" placeholder="Employee First Name" id="employeeFirstInput" class="input">
-    
-  
-    <input type="text" placeholder="Employee Last Name" id="employeeLastInput" class="input">
-  
-    <input type="number" placeholder="ID Number" id="idNumberInput" class="input">
-    
-  
-    <input type="text" placeholder="Job Title" id="jobTitleInput" class="input">
-    
-  
-    <input type="number" placeholder="Annual Salary" id="salaryInput" class="input">
-  </div>
-  <div id="labelFlex">
-    
-    <label htmlFor="employeeFirstInput" class="label">Employee First Name</label>
-    <label htmlFor="employeeLastInput" class="label">Employee Last Name</label>
-    <label htmlFor="idNumberInput" class="label">ID Number</label>
-    <label htmlFor="salaryInput" class="label">Annual Salary</label>
-    <br>
-    <label htmlFor="jobTitleInput" class="label">Job Title</label>
+    <div id="firstDiv">
+      <input type="text" placeholder="Employee First Name" id="employeeFirstInput" class="input">
+      <label htmlFor="employeeFirstInput" class="label">Employee First Name</label>
+    </div>
+    <div id="lastDiv">
+      <input type="text" placeholder="Employee Last Name" id="employeeLastInput" class="input">
+      <label htmlFor="employeeLastInput" class="label">Employee Last Name</label>
+    </div>
+    <div id="idDiv">
+      <input type="number" placeholder="ID Number" id="idNumberInput" class="input">
+      <label htmlFor="idNumberInput" class="label">ID Number</label>
+    </div>
+    <div id="titleDiv">
+      <input type="text" placeholder="Job Title" id="jobTitleInput" class="input">
+      <label htmlFor="jobTitleInput" class="label">Job Title</label>
+    </div>
+    <div id="salaryDiv">
+      <input type="number" placeholder="Annual Salary" id="salaryInput" class="input">
+      <label htmlFor="salaryInput" class="label">Annual Salary</label>
+    </div>
   </div>
   <br>
     <button id="employeeInfoButton" >Add Employee</button>

@@ -11,20 +11,43 @@ header h1 {
   font-weight: normal;
   padding: 20px;
 }
-#flexInput {
-  display: flexbox;
+h2 {
+  font-weight: normal;
 }
-#labeleFlex {
-  display: flexbox;
+
+.input, .label  {
+  display: block;
 }
-.input {
-  flex-direction: row;
-  width: 15%
+#firstDiv {
+  float: left;
+  margin-right: 2%;
 }
-.label {
-  flex-direction: row;
-  width: 30%;
+#lastDiv {
+  float: left;
+  margin-right: 2%;
 }
+#idDiv {
+  float: left;
+  margin-right: 2%;
+}
+#titleDiv {
+  float: left;
+  margin-right: 2%;
+}
+#salaryDiv {
+  float: left;
+  margin-right: 2%;
+}
+label {
+  font-size: small;
+}
+input {
+  border-width: 2px;
+}
+button {
+  border-radius: 5px;
+}
+
 
 table {
   width: 100%;
@@ -38,9 +61,6 @@ table, th, td, tfoot {
 }
 th, td {
   padding: 3px;
-}
-input {
-  margin-top: 5px;
 }
 
 .redCell {
