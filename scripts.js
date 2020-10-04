@@ -52,11 +52,12 @@ function listEmpInfo(){
     <tr>
       <td>${newEmployee.firstName}</td>
       <td>${newEmployee.lastName}</td>
-      <td>${newEmployee.idNumber}</td>
+      <td id="idData">${newEmployee.idNumber}</td>
       <td>${newEmployee.title}</td>
-      <td>$${newEmployee.salary}</td>
+      <td id="salaryData">$${newEmployee.salary}</td>
       <td><button id="deleteEmpButton">Remove Employee</button></td>
     </tr>`
   );
-  let empIndex = employeeArray.indexOf(newEmployee);
 }//end storeEmpInfo
+
+
