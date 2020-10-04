@@ -17,6 +17,7 @@ h2 {
 
 .input, .label  {
   display: block;
+  padding: 3px;
 }
 #firstDiv {
   float: left;
