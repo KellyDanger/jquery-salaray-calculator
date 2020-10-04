@@ -16,7 +16,7 @@ function addFunc(){
 }//end addFunc
 
 
-//calculate the monthly salary of each employee fromt he employeeArray and add up the total monthly cost of salaries, called in addFunc
+//calculate the monthly salary of each employee from the employeeArray and add up the total monthly cost of salaries, called in addFunc
 function calcMonthlyCosts(){
   let monthlySalary = 0;
   let monthlyCost = 0;
@@ -34,11 +34,10 @@ function calcMonthlyCosts(){
 
 function deleteFunc(){
   $(this).parent().parent().remove();
-  
 }//end deleteFunc
 
 
-//creates an object to store user input as an object and push that object to the employeeArray
+//creates an object to store user input as an object and push that object to the employeeArray, and append the object to the table in the DOM
 function listEmpInfo(){
   let newEmployee = {
     firstName: $('#employeeFirstInput').val(),
@@ -52,9 +51,9 @@ function listEmpInfo(){
     <tr>
       <td>${newEmployee.firstName}</td>
       <td>${newEmployee.lastName}</td>
-      <td id="idData">${newEmployee.idNumber}</td>
+      <td>${newEmployee.idNumber}</td>
       <td>${newEmployee.title}</td>
-      <td id="salaryData">$${newEmployee.salary}</td>
+      <td>$${newEmployee.salary}</td>
       <td><button id="deleteEmpButton">Remove Employee</button></td>
     </tr>`
   );
