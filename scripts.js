@@ -33,7 +33,6 @@ function calcMonthlyCosts(){
 }//end calculateMonthlyCosts
 
 function deleteFunc(){
-  reCalcTotal();
   $(this).parent().parent().remove();
   
 }//end deleteFunc
@@ -55,17 +54,9 @@ function listEmpInfo(){
       <td>${newEmployee.lastName}</td>
       <td>${newEmployee.idNumber}</td>
       <td>${newEmployee.title}</td>
-      <td id="salaryData">${newEmployee.salary}</td>
+      <td>$${newEmployee.salary}</td>
       <td><button id="deleteEmpButton">Remove Employee</button></td>
     </tr>`
   );
+  let empIndex = employeeArray.indexOf(newEmployee);
 }//end storeEmpInfo
-//still working on this...not mathing right
-function reCalcTotal(){
-  let deletedVal = Number($('#salaryData').text()/12);
-  let monthNum = Number($('#monthlyTotalNum').text());
-  monthNum -= deletedVal;
-  $('#monthlyTotalNum').empty();
-  $('#monthlyTotalNum').text(`${monthNum}`)
-}//end reCalcTotal
-

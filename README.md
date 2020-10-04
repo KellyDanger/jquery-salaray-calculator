@@ -1,9 +1,11 @@
 # Project Name
 
-[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md
+
 
 ## Description
 
-Your project description goes here. What problem did you solve? How did you solve it?
+I created an app that utilizes user-input to create an array of employees and calculate their monthly salary and the total montly cost of employee salaries. 
+
+This app populates a table on the page of all existing employees and allows a user to remove employees from that table.
 
 Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
